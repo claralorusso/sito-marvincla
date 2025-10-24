@@ -18,7 +18,7 @@ export default function Footer() {
             <Heading size="md" mb={4}>
               Marvincla S.r.l
             </Heading>
-            <Text fontSize="sm">Frase dell'azienda</Text>
+            <Text fontSize="sm">Dove l’innovazione incontra la filiera</Text>
           </Box>
 
           {/* Contatti */}
@@ -26,9 +26,9 @@ export default function Footer() {
             <Heading size="md" mb={4}>
               Contatti
             </Heading>
-            <Text>Email: info@marvincla.it</Text>
+            <Text>Email: marvinclasrl@gmail.com</Text>
             <Text>Tel: +39 111 222 3333</Text>
-            <Text>P.IVA: 01234567890</Text>
+            <Text>P.IVA: 08760160724</Text>
           </Box>
 
           {/* Social

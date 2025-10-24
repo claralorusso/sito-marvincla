@@ -48,7 +48,8 @@ export default function Navbar() {
         <HStack spacing={6}>
           {[
             { to: "/", label: "Home" },
-            { to: "/story", label: "Chi Siamo" },
+            { to: "/chisiamo", label: "Chi Siamo" },
+            { to: "/cosafacciamo", label: "Cosa facciamo" },
             { to: "/coldsharing", label: "Coldsharing" },
             { to: "/contatti", label: "Contatti" },
           ].map((link) => (

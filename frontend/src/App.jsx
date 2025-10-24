@@ -3,7 +3,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Contatti from "./pages/Contatti";
-import Storia from "./pages/Storia";
+import ChiSiamo from "./pages/ChiSiamo";
+import Cosafacciamo from "./pages/Cosafacciamo";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import WhatsAppButton from "./components/Whatsapp-button";
 import "./App.css";
@@ -19,7 +20,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/coldsharing" element={<Coldsharing />} />
           <Route path="/contatti" element={<Contatti />} />
-          <Route path="/story" element={<Storia />} />
+          <Route path="/chisiamo" element={<ChiSiamo />} />
+          <Route path="/cosafacciamo" element={<Cosafacciamo />} />
         </Routes>
         {/* Footer sempre visibile */}
         <Footer />
