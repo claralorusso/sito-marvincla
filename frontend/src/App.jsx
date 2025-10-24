@@ -5,6 +5,10 @@ import Home from "./pages/Home";
 import Contatti from "./pages/Contatti";
 import ChiSiamo from "./pages/ChiSiamo";
 import Cosafacciamo from "./pages/Cosafacciamo";
+import Partnercollaborazioni from "./pages/Partnercollaborazioni";
+import Provacoldsharing from "./pages/provacoldsharing";
+import Cookies from "./pages/Cookies";
+import Privacy from "./pages/Privacy";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import WhatsAppButton from "./components/Whatsapp-button";
 import "./App.css";
@@ -22,6 +26,10 @@ function App() {
           <Route path="/contatti" element={<Contatti />} />
           <Route path="/chisiamo" element={<ChiSiamo />} />
           <Route path="/cosafacciamo" element={<Cosafacciamo />} />
+          <Route path="/partnercollaborazioni" element={<Partnercollaborazioni/>} />
+          <Route path="/provacoldsharing" element={<Provacoldsharing/>} />
+          <Route path="/cookies" element={<Cookies/>} />
+          <Route path="/privacy" element={<Privacy/>} />
         </Routes>
         {/* Footer sempre visibile */}
         <Footer />

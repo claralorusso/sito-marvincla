@@ -49,7 +49,7 @@ const slides = [
     ctaTarget: "vision",
   },
   {
-    image: "//Sfondo HOME.pngg",
+    image: "/Sfondo HOME.png",
     headline:
       "Trasformiamo la filiera agroalimentare con dati, intelligenza artificiale, siti, e-commerce e piattaforme digitali.",
     subtitle:
@@ -58,7 +58,7 @@ const slides = [
     ctaTarget: "vision",
   },
   {
-    image: "/hero-/Sfondo HOME.png",
+    image: "/Sfondo HOME.png",
     headline:
       "Dove l’innovazione incontra la filiera. Tecnologia, dati e visione strategica al servizio dell’agroalimentare.",
     subtitle:
@@ -72,7 +72,7 @@ export default function Home() {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    const t = setInterval(() => setIndex((p) => (p + 1) % slides.length), 7000);
+    const t = setInterval(() => setIndex((p) => (p + 1) % slides.length), 9000);
     return () => clearInterval(t);
   }, []);
 
@@ -85,12 +85,10 @@ export default function Home() {
       <Box position="relative" overflow="hidden">
         <Image
           src={slides[index].image}
-          alt="Marvincla Hero"
           w="100%"
           h={["80vh", "90vh", "100vh"]}
           objectFit="cover"
         />
-
         <Box
           position="absolute"
           inset="0"
@@ -110,14 +108,6 @@ export default function Home() {
               >
                 {/* Logo + Nome */}
                 <Box display="flex" alignItems="center" gap={4} mb={10}>
-                  <Image
-                    src="/Logo Marvincla.png"
-                    alt="Marvincla"
-                    boxSize={["90px", "110px", "130px"]}
-                    objectFit="contain"
-                    // Per renderlo bianco su sfondo scuro: togli il commento
-                    // style={{ filter: "brightness(0) invert(1)" }}
-                  />
                   <Heading
                     fontSize={["2xl", "3xl", "4xl"]}
                     fontWeight="bold"
@@ -125,7 +115,6 @@ export default function Home() {
                     textTransform="uppercase"
                     letterSpacing="wide"
                   >
-                    Marvincla
                   </Heading>
                 </Box>
 

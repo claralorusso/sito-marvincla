@@ -247,7 +247,7 @@ export default function Contatti() {
             <Card mb={6} variant="outline">
               <CardHeader pb={0}>
                 <Heading size="sm" color="teal.700">
-                  Marvincla — Polo digitale per l’agroalimentare
+                  Marvincla S.R.L. — Polo digitale per l’agroalimentare
                 </Heading>
               </CardHeader>
               <CardBody>
@@ -266,11 +266,11 @@ export default function Contatti() {
                   </HStack>
                   <HStack align="start">
                     <Icon as={FaMapMarkerAlt} color="teal.500" mt="2px" />
-                    <Text>Indirizzo aziendale, CAP — Città (IT)</Text>
+                    <Text>Via Giuseppe Semerari, 7, 70132 Bari (BA) - Italia </Text>
                   </HStack>
                   <HStack>
                     <Icon as={FaClock} color="teal.500" />
-                    <Text>Lun–Ven 09:00–18:00</Text>
+                    <Text>Lun–Ven 09:00/13:00–14:00/18:00</Text>
                   </HStack>
                 </VStack>
               </CardBody>
@@ -278,14 +278,16 @@ export default function Contatti() {
 
             <Box rounded="2xl" overflow="hidden" borderWidth="1px">
               {/* Sostituisci la src con la tua mappa Google (Embed) */}
-              <Box
-                as="iframe"
-                title="Mappa Marvincla"
-                src="https://maps.google.com/maps?q=Milano&t=&z=12&ie=UTF8&iwloc=&output=embed"
-                w="100%"
-                h="300px"
-                border={0}
-              />
+            <Box
+              as="iframe"
+              title="Mappa Marvincla"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12213.969112447854!2d16.8073638!3d41.1373499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347ef4ee9d66a15%3A0x14ac839c9d4e9814!2sVia%20Giuseppe%20Semerari%2C%207%2C%2070132%20Bari%20BA!5e0!3m2!1sit!2sit!4v1698062399000!5m2!1sit!2sit"
+              w="100%"
+              h="300px"
+              border={0}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
             </Box>
           </MotionBox>
         </SimpleGrid>

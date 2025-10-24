@@ -35,9 +35,9 @@ export default function Navbar() {
       >
         <Box fontWeight="bold" fontSize="xl">
           <Image
-            src="./logoM.svg"
+            src="./Logotrasparentemarvincla.png"
             alt="logo"
-            w="90px"
+            w="180px"
             h="90px"
             textColor="white"
             color={"white"}
@@ -51,6 +51,8 @@ export default function Navbar() {
             { to: "/chisiamo", label: "Chi Siamo" },
             { to: "/cosafacciamo", label: "Cosa facciamo" },
             { to: "/coldsharing", label: "Coldsharing" },
+            { to: "/provacoldsharing", label: "Partner & Collaborazioni" },
+            { to: "/partnercollaborazioni", label: "Partner & Collaborazioni" },
             { to: "/contatti", label: "Contatti" },
           ].map((link) => (
             <NavLink key={link.to} to={link.to}>

@@ -230,7 +230,7 @@ export default function ColdSharing() {
               size="lg"
               rightIcon={<FaArrowRight />}
               as="a"
-              href="https://cellefrigo.net"
+              href="https://cellefrigo.net.it"
               target="_blank"
               rel="noreferrer"
             >
